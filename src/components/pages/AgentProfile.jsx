@@ -192,6 +192,46 @@ const AgentProfile = () => {
   }
 
   // Detail view - show specific agent
+// Show error state if agent not found
+  if (error) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <Button
+          variant="ghost"
+          onClick={() => navigate('/agents')}
+          className="mb-6"
+        >
+          <ApperIcon name="ArrowLeft" className="w-4 h-4 mr-2" />
+          Back to Agents
+        </Button>
+        <ErrorState
+          title="Agent Not Found"
+          message="The agent profile you're looking for doesn't exist or may have been removed."
+          onRetry={loadData}
+        />
+      </div>
+    );
+  }
+
+  // Show loading state
+  if (loading || !agent) {
+    return (
+      <div className="container mx-auto px-4 py-8">
+        <Button
+          variant="ghost"
+          onClick={() => navigate('/agents')}
+          className="mb-6"
+        >
+          <ApperIcon name="ArrowLeft" className="w-4 h-4 mr-2" />
+          Back to Agents
+        </Button>
+        <div className="flex justify-center items-center py-12">
+          <LoadingSpinner size="lg" />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Back Button */}
@@ -212,27 +252,27 @@ const AgentProfile = () => {
       >
         <div className="flex flex-col md:flex-row md:items-center space-y-6 md:space-y-0 md:space-x-8">
           <img
-            src={agent.photo}
-            alt={agent.name}
+            src={agent?.photo || 'https://via.placeholder.com/128x128?text=No+Photo'}
+            alt={agent?.name || 'Agent'}
             className="w-32 h-32 rounded-full object-cover mx-auto md:mx-0"
           />
           
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-3xl font-bold text-gray-900 mb-2">{agent.name}</h1>
-            <p className="text-xl text-gray-600 mb-4">{agent.company}</p>
+            <h1 className="text-3xl font-bold text-gray-900 mb-2">{agent?.name || 'Unknown Agent'}</h1>
+            <p className="text-xl text-gray-600 mb-4">{agent?.company || 'No company listed'}</p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
               <div className="flex items-center justify-center md:justify-start text-gray-600">
                 <ApperIcon name="Phone" className="w-5 h-5 mr-2" />
-                <span>{agent.phone}</span>
+                <span>{agent?.phone || 'No phone listed'}</span>
               </div>
               <div className="flex items-center justify-center md:justify-start text-gray-600">
                 <ApperIcon name="Mail" className="w-5 h-5 mr-2" />
-                <span>{agent.email}</span>
+                <span>{agent?.email || 'No email listed'}</span>
               </div>
               <div className="flex items-center justify-center md:justify-start text-gray-600">
                 <ApperIcon name="Award" className="w-5 h-5 mr-2" />
-                <span>{agent.license}</span>
+                <span>{agent?.license || 'No license listed'}</span>
               </div>
             </div>
 
@@ -240,6 +280,7 @@ const AgentProfile = () => {
               <Button
                 variant="primary"
                 onClick={() => handleContactAgent(agent, 'phone')}
+                disabled={!agent?.phone}
               >
                 <ApperIcon name="Phone" className="w-4 h-4 mr-2" />
                 Call Agent
@@ -247,6 +288,7 @@ const AgentProfile = () => {
               <Button
                 variant="outline"
                 onClick={() => handleContactAgent(agent, 'email')}
+                disabled={!agent?.email}
               >
                 <ApperIcon name="Mail" className="w-4 h-4 mr-2" />
                 Send Email
@@ -260,7 +302,7 @@ const AgentProfile = () => {
       <div className="mb-8">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-gray-900">
-            Listings by {agent.name}
+            Listings by {agent?.name || 'Agent'}
           </h2>
           <Badge variant="primary" className="text-sm">
             {agentListings.length} {agentListings.length === 1 ? 'Property' : 'Properties'}
@@ -283,7 +325,7 @@ const AgentProfile = () => {
           <EmptyState
             icon="Home"
             title="No Listings Found"
-            message={`${agent.name} doesn't have any active listings at the moment.`}
+            message={`${agent?.name || 'This agent'} doesn't have any active listings at the moment.`}
           />
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
