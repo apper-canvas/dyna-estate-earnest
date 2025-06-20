@@ -1,17 +1,17 @@
-import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { toast } from 'react-toastify';
-import { format } from 'date-fns';
-import ApperIcon from '@/components/ApperIcon';
-import Button from '@/components/atoms/Button';
-import Badge from '@/components/atoms/Badge';
-import LoadingSpinner from '@/components/atoms/LoadingSpinner';
-import ErrorState from '@/components/molecules/ErrorState';
-import PropertyGallery from '@/components/organisms/PropertyGallery';
-import propertyService from '@/services/api/propertyService';
-import savedPropertyService from '@/services/api/savedPropertyService';
-
+import React, { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import { format } from "date-fns";
+import ApperIcon from "@/components/ApperIcon";
+import Button from "@/components/atoms/Button";
+import Badge from "@/components/atoms/Badge";
+import LoadingSpinner from "@/components/atoms/LoadingSpinner";
+import ErrorState from "@/components/molecules/ErrorState";
+import PropertyGallery from "@/components/organisms/PropertyGallery";
+import AgentContactCard from "@/components/molecules/AgentContactCard";
+import propertyService from "@/services/api/propertyService";
+import savedPropertyService from "@/services/api/savedPropertyService";
 const PropertyDetail = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -361,9 +361,14 @@ const PropertyDetail = () => {
                   <span className="font-semibold">
                     ${Math.round(property.price / property.squareFeet)}
                   </span>
-                </div>
+</div>
               </div>
             </motion.div>
+
+            {/* Agent Contact Card */}
+            {property.agent && (
+              <AgentContactCard agent={property.agent} />
+            )}
           </div>
         </div>
       </div>
