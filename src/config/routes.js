@@ -1,7 +1,9 @@
-import Browse from '@/components/pages/Browse';
-import PropertyDetail from '@/components/pages/PropertyDetail';
-import MapView from '@/components/pages/MapView';
-import SavedProperties from '@/components/pages/SavedProperties';
+import React from "react";
+import Browse from "@/components/pages/Browse";
+import PropertyDetail from "@/components/pages/PropertyDetail";
+import MapView from "@/components/pages/MapView";
+import SavedProperties from "@/components/pages/SavedProperties";
+import AgentProfile from "@/components/pages/AgentProfile";
 
 export const routes = {
   browse: {
@@ -39,8 +41,22 @@ export const routes = {
     icon: 'Building',
     component: PropertyDetail,
     hidden: true
+  },
+  agents: {
+    id: 'agents',
+    label: 'Agents',
+    path: '/agents',
+    icon: 'UserCheck',
+    component: AgentProfile
+  },
+  agent: {
+    id: 'agent',
+    label: 'Agent Profile',
+    path: '/agents/:id',
+    icon: 'User',
+    component: AgentProfile,
+    hidden: true
   }
 };
 
 export const routeArray = Object.values(routes);
-export default routes;

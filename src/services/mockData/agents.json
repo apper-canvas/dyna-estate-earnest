@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "name": "Sarah Martinez",
+    "photo": "https://images.unsplash.com/photo-1494790108755-2616b612b5c5?w=400&h=400&fit=crop&crop=faces",
+    "phone": "(555) 123-4567",
+    "email": "sarah.martinez@estatehub.com",
+    "company": "Luxury Coastal Realty",
+    "license": "DRE #01234567",
+    "bio": "Sarah specializes in luxury coastal properties with over 15 years of experience in high-end real estate. She has a keen eye for architectural details and helps clients find their dream oceanfront homes.",
+    "specialties": ["Luxury Properties", "Coastal Homes", "Investment Properties"],
+    "yearsExperience": 15,
+    "totalSales": 450,
+    "languages": ["English", "Spanish"]
+  },
+  {
+    "Id": 2,
+    "name": "Michael Chen",
+    "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=faces",
+    "phone": "(555) 234-5678",
+    "email": "michael.chen@estatehub.com",
+    "company": "Downtown Premier Properties",
+    "license": "DRE #01345678",
+    "bio": "Michael is an expert in downtown and urban properties, specializing in condos, penthouses, and commercial real estate. His deep knowledge of city development trends helps clients make informed investment decisions.",
+    "specialties": ["Urban Properties", "Condominiums", "Commercial Real Estate"],
+    "yearsExperience": 12,
+    "totalSales": 380,
+    "languages": ["English", "Mandarin", "Cantonese"]
+  },
+  {
+    "Id": 3,
+    "name": "Jennifer Walsh",
+    "photo": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=faces",
+    "phone": "(555) 345-6789",
+    "email": "jennifer.walsh@estatehub.com",
+    "company": "Heritage Home Specialists",
+    "license": "DRE #01456789",
+    "bio": "Jennifer has a passion for historic and heritage properties. She specializes in craftsman homes, Victorian houses, and other architectural gems, helping preserve their character while modernizing for today's lifestyle.",
+    "specialties": ["Historic Properties", "Craftsman Homes", "Restoration Projects"],
+    "yearsExperience": 18,
+    "totalSales": 320,
+    "languages": ["English", "French"]
+  },
+  {
+    "Id": 4,
+    "name": "David Rodriguez",
+    "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces",
+    "phone": "(555) 456-7890",
+    "email": "david.rodriguez@estatehub.com",
+    "company": "Urban Loft Realty",
+    "license": "DRE #01567890",
+    "bio": "David focuses on modern urban living spaces including lofts, townhouses, and contemporary homes in trendy neighborhoods. He understands the lifestyle needs of young professionals and growing families.",
+    "specialties": ["Modern Homes", "Townhouses", "Urban Development"],
+    "yearsExperience": 8,
+    "totalSales": 195,
+    "languages": ["English", "Spanish", "Portuguese"]
+  },
+  {
+    "Id": 5,
+    "name": "Lisa Thompson",
+    "photo": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=faces",
+    "phone": "(555) 567-8901",
+    "email": "lisa.thompson@estatehub.com",
+    "company": "Beverly Hills Elite Properties",
+    "license": "DRE #01678901",
+    "bio": "Lisa is a luxury property specialist serving Beverly Hills and surrounding prestigious areas. She has extensive experience with high-net-worth clients and exclusive properties in gated communities.",
+    "specialties": ["Luxury Estates", "Gated Communities", "Celebrity Properties"],
+    "yearsExperience": 20,
+    "totalSales": 520,
+    "languages": ["English", "Italian", "German"]
+  }
+]
