@@ -1,0 +1,193 @@
+[
+  {
+    "Id": 1,
+    "title": "Modern Luxury Villa with Ocean Views",
+    "price": 2450000,
+    "propertyType": "House",
+    "bedrooms": 5,
+    "bathrooms": 4,
+    "squareFeet": 3200,
+    "address": {
+      "street": "1247 Coastal Drive",
+      "city": "Malibu",
+      "state": "CA",
+      "zipCode": "90265",
+      "neighborhood": "Point Dume"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
+      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
+      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
+      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800",
+      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800"
+    ],
+    "description": "Spectacular contemporary villa perched on the bluffs with panoramic ocean views. This architectural masterpiece features floor-to-ceiling windows, an infinity pool, and premium finishes throughout. The open-concept design seamlessly blends indoor and outdoor living spaces.",
+    "features": [
+      "Infinity Pool",
+      "Ocean Views",
+      "Gourmet Kitchen",
+      "Wine Cellar",
+      "Home Theater",
+      "3-Car Garage",
+      "Guest Suite",
+      "Private Beach Access"
+    ],
+    "listingDate": "2024-01-15T10:30:00Z",
+    "coordinates": {
+      "lat": 34.0259,
+      "lng": -118.7798
+    }
+  },
+  {
+    "Id": 2,
+    "title": "Downtown Penthouse with City Skyline",
+    "price": 1875000,
+    "propertyType": "Condo",
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "squareFeet": 2100,
+    "address": {
+      "street": "555 Grand Avenue, Unit 4501",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipCode": "90071",
+      "neighborhood": "Downtown"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800",
+      "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800",
+      "https://images.unsplash.com/photo-1560449752-325b6fb3a677?w=800",
+      "https://images.unsplash.com/photo-1560448075-cbc16bb4af8e?w=800"
+    ],
+    "description": "Luxurious penthouse offering breathtaking 360-degree city views from the 45th floor. This sophisticated residence features high-end appliances, marble countertops, and floor-to-ceiling windows. Building amenities include rooftop pool, fitness center, and concierge services.",
+    "features": [
+      "City Views",
+      "Rooftop Pool",
+      "Concierge",
+      "Fitness Center",
+      "High-end Appliances",
+      "Marble Countertops",
+      "Private Balcony",
+      "Valet Parking"
+    ],
+    "listingDate": "2024-01-12T14:20:00Z",
+    "coordinates": {
+      "lat": 34.0522,
+      "lng": -118.2437
+    }
+  },
+  {
+    "Id": 3,
+    "title": "Charming Craftsman Bungalow",
+    "price": 925000,
+    "propertyType": "House",
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "squareFeet": 1650,
+    "address": {
+      "street": "842 Maple Street",
+      "city": "Pasadena",
+      "state": "CA",
+      "zipCode": "91103",
+      "neighborhood": "Bungalow Heaven"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800",
+      "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800",
+      "https://images.unsplash.com/photo-1567496898669-ee935f5f647a?w=800",
+      "https://images.unsplash.com/photo-1566908829077-2bd94a78b58e?w=800"
+    ],
+    "description": "Beautifully restored 1920s Craftsman bungalow in the historic Bungalow Heaven district. Original hardwood floors, built-in cabinetry, and period details have been lovingly preserved. The home features a chef's kitchen and landscaped backyard perfect for entertaining.",
+    "features": [
+      "Original Hardwood Floors",
+      "Built-in Cabinetry",
+      "Chef's Kitchen",
+      "Landscaped Yard",
+      "Period Details",
+      "Central Air",
+      "2-Car Garage",
+      "Walk to Old Town"
+    ],
+    "listingDate": "2024-01-18T09:45:00Z",
+    "coordinates": {
+      "lat": 34.1478,
+      "lng": -118.1445
+    }
+  },
+  {
+    "Id": 4,
+    "title": "Contemporary Townhouse in Arts District",
+    "price": 1250000,
+    "propertyType": "Townhouse",
+    "bedrooms": 2,
+    "bathrooms": 3,
+    "squareFeet": 1850,
+    "address": {
+      "street": "1658 Industrial Street",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zipCode": "90021",
+      "neighborhood": "Arts District"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
+      "https://images.unsplash.com/photo-1600607687644-c7171b42498b?w=800",
+      "https://images.unsplash.com/photo-1600573472605-ca3e6c7ca6c7?w=800",
+      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800"
+    ],
+    "description": "Striking modern townhouse in the vibrant Arts District. This three-story home features an open floor plan, industrial-chic design elements, and a private rooftop deck with downtown views. Walking distance to galleries, restaurants, and public transit.",
+    "features": [
+      "Rooftop Deck",
+      "Downtown Views",
+      "Industrial Design",
+      "Open Floor Plan",
+      "Walk to Transit",
+      "Private Garage",
+      "Modern Kitchen",
+      "High Ceilings"
+    ],
+    "listingDate": "2024-01-20T16:15:00Z",
+    "coordinates": {
+      "lat": 34.0391,
+      "lng": -118.2362
+    }
+  },
+  {
+    "Id": 5,
+    "title": "Mid-Century Modern with Pool",
+    "price": 1650000,
+    "propertyType": "House",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "squareFeet": 2400,
+    "address": {
+      "street": "3421 Hillcrest Drive",
+      "city": "Beverly Hills",
+      "state": "CA",
+      "zipCode": "90210",
+      "neighborhood": "Trousdale Estates"
+    },
+    "images": [
+      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
+      "https://images.unsplash.com/photo-1600563438938-a42d86772ee4?w=800",
+      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=800",
+      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800"
+    ],
+    "description": "Iconic mid-century modern home designed by renowned architect Joseph Eichler. Features post-and-beam construction, walls of glass, and seamless indoor-outdoor flow. The property includes a sparkling pool and mature landscaping for ultimate privacy.",
+    "features": [
+      "Mid-Century Architecture",
+      "Swimming Pool",
+      "Walls of Glass",
+      "Post-and-Beam",
+      "Mature Landscaping",
+      "Privacy",
+      "Fireplace",
+      "Updated Kitchen"
+    ],
+    "listingDate": "2024-01-22T11:30:00Z",
+    "coordinates": {
+      "lat": 34.0901,
+      "lng": -118.4065
+    }
+  }
+]
